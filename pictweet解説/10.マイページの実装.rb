@@ -7,4 +7,7 @@ mergeメソッド：ハッシュを統合させるときに使用するメソッ
   tweet.merge(uid)
   => {:name=>"たなか", :text=>"test", :image=>"test.jpeg", :user_id=>"1"}
 
+アソシエーション：モデルを利用したテーブル同士の関連付け。
+  has_manyメソッド：1対多のつながり
+  belongs_toメソッド：1対1のつながり
 
