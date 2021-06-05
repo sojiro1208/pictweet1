@@ -8,6 +8,6 @@
     render partial: "sample"(同じディレクトリにない場合、指定する「tweets/tweet」など)
 
   localsオプション：部分テンプレート内でその変数が使用できる。
-  【例】renderメソッドのlocalsオプション
-    render partial: "sample", locals: { post: "hello!" } 
+  【例】renderメソッドのlocalsオプション：部分テンプレート内において、hellow!という文字列が代入されたpostという変数が使用できる
+    render partial: "sample", locals: { post: "hello!"} 
   
