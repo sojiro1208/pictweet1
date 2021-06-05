@@ -9,6 +9,7 @@ form_whth(model: @tweet, local: true) do |form|   ※前回はURLをした
       params.require(:モデル名)  # 取得したい情報を指定する
       ※params[:モデル名]でも同じ情報を取得できるが、requireを使うことで、
       意図しないパラメーターをエラーとして返すことができる。
+      
   permitメソッド：paramsが使用できるメソッド。取得したいキーを指定でき、指定したキーと値のセットのみを取得できる。
   【例】permit：キーを指定すると、それ以外のキーがあっても値を受け付けない。
     params.require(:モデル名).permit(:キー名, :キー名) # 取得したいキーを指定する
